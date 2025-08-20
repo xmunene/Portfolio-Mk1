@@ -8,25 +8,77 @@ Title: Sci-Fi Computer Room
 */
 
 import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import { useGLTF, useTexture } from '@react-three/drei'
+import * as THREE from 'three';
 
 export function Room(props) {
+  const matcapTexture = useTexture('/images/textures/mat1.png');
   const { nodes, materials } = useGLTF('/models/sci-fi_computer_room.glb')
+  
+  // Dark walls with slight blue tint
+  const wallMaterial = new THREE.MeshPhongMaterial({ 
+    color: '#1a1a2e',
+    shininess: 10
+  })
+  
+  // Darker floor/ceiling
+  const floorMaterial = new THREE.MeshPhongMaterial({ 
+    color: '#0f0f1a',
+    shininess: 5
+  })
+  
+  // Desk material - dark with metallic look
+  const deskMaterial = new THREE.MeshPhongMaterial({ 
+    color: '#2a2a3a',
+    shininess: 30,
+    specular: '#444444'
+  })
+  
+  // Enhanced emission materials
+  const emissionMaterial = new THREE.MeshStandardMaterial({
+    color: '#ffffff',
+    emissive: '#ffffff',
+    emissiveIntensity: 0.8,
+    toneMapped: false
+  })
+  
+  const emissionBlueMaterial = new THREE.MeshStandardMaterial({
+    color: '#00ffff',
+    emissive: '#00aacc',
+    emissiveIntensity: 1.2,
+    toneMapped: false
+  })
+  
+  // Monitor material with subtle glow
+  const monitorMaterial = new THREE.MeshStandardMaterial({
+    color: '#1a1a2e',
+    emissive: '#001122',
+    emissiveIntensity: 0.3,
+    roughness: 0.3,
+    metalness: 0.1
+  })
+  
+  // Speaker material
+  const speakerMaterial = new THREE.MeshPhongMaterial({
+    color: '#1a1a1a',
+    shininess: 20
+  })
+  
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.987}>
-        <mesh geometry={nodes.Object_2.geometry} material={materials.Desk_1} />
+        <mesh geometry={nodes.Object_2.geometry} material={deskMaterial} />
         <mesh geometry={nodes.Object_3.geometry} material={materials.Posters} />
         <mesh geometry={nodes.Object_4.geometry} material={materials.Keyboard} />
-        <mesh geometry={nodes.Object_5.geometry} material={materials.speaker_2} />
-        <mesh geometry={nodes.Object_6.geometry} material={materials.BG_Dark} />
+        <mesh geometry={nodes.Object_5.geometry} material={speakerMaterial} />
+        <mesh geometry={nodes.Object_6.geometry} material={floorMaterial} />
         <mesh geometry={nodes.Object_7.geometry} material={materials.Carpet} />
-        <mesh geometry={nodes.Object_8.geometry} material={materials.Emission} />
-        <mesh geometry={nodes.Object_9.geometry} material={materials.Emission_Blue} />
-        <mesh geometry={nodes.Object_10.geometry} material={materials.Foam_Acoustic} />
-        <mesh geometry={nodes.Object_11.geometry} material={materials.Foam_Acoustic} />
+        <mesh geometry={nodes.Object_8.geometry} material={emissionMaterial} />
+        <mesh geometry={nodes.Object_9.geometry} material={emissionBlueMaterial} />
+        <mesh geometry={nodes.Object_10.geometry} material={wallMaterial} />
+        <mesh geometry={nodes.Object_11.geometry} material={wallMaterial} />
         <mesh geometry={nodes.Object_12.geometry} material={materials.Trim_Sheet_Wall} />
-        <mesh geometry={nodes.Object_13.geometry} material={materials.Monitor_Single} />
+        <mesh geometry={nodes.Object_13.geometry} material={monitorMaterial} />
       </group>
     </group>
   )
