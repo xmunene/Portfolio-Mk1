@@ -9,16 +9,16 @@ export const HeroLights = () => {
         position={[0, 5, 0]}
         width={6}
         height={2}
-        intensity={16}
-        color="#e6f3ff"
+        intensity={90}
+        color="#000f89"
         rotation={[-Math.PI / 2, 0, 0]}
       />
       
       {/* Blue accent lighting from computer/monitors */}
       <spotLight 
-        position={[0, 0, 3]}
+        position={[0, 1, 3]}
         angle={0.8}
-        intensity={20}
+        intensity={40}
         penumbra={0.5}
         color="#00aaff"
         target-position={[0, 0, 0]}
@@ -27,7 +27,7 @@ export const HeroLights = () => {
       {/* Warm light from screens */}
       <pointLight 
         position={[0, 1.5, 2]}
-        intensity={20}
+        intensity={60}
         color="#4488ff"
         distance={8}
         decay={2}
@@ -37,7 +37,7 @@ export const HeroLights = () => {
       <spotLight 
         position={[-3, 3, 5]}
         angle={1.2}
-        intensity={40}
+        intensity={50}
         penumbra={1}
         color="#2244aa"
       />

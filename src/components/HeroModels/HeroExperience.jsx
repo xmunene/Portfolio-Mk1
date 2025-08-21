@@ -28,8 +28,8 @@ const HeroExperience = () => {
         {/*<Particles count={100} />*/}
 
         <group
-        scale={isMobile? 2.5 : 2.5}
-        position={[1, -1.7, 0]}
+        scale={isMobile? 2.3 : 2.5}
+        position={[1.1, -1.9, 0]}
         rotation={[0, Math.PI / 111, 0]}
         >
         <Room />
