@@ -29,8 +29,8 @@ export function Room(props) {
   
   // Desk material - dark with metallic look
   const deskMaterial = new THREE.MeshPhongMaterial({ 
-    color: '#2a2a3a',
-    shininess: 30,
+    color: '#3B3B3B',
+    shininess:30,
     specular: '#444444'
   })
   

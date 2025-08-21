@@ -16,7 +16,7 @@ export const HeroLights = () => {
       
       {/* Blue accent lighting from computer/monitors */}
       <spotLight 
-        position={[0, 0.8, 3]}
+        position={[0, 0, 3]}
         angle={0.8}
         intensity={20}
         penumbra={0.5}
