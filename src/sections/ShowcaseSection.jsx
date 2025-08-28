@@ -19,7 +19,20 @@ const ShowcaseSection = () => {
                     </div>
 
                     {/* Right Side */}
-                    
+                    <div className="project-list-wrapper overflow">
+                        <div className="project">
+                            <div className="image-wrapper bg-[#e6dbff]">
+                                <img src="/images/project2.png" alt="3D Portfolio" />
+                            </div>
+                            <h2>3D Portfolio with Three.JS</h2>
+                        </div>
+                        <div className="project">
+                            <div className="image-wrapper bg-[#dbecff]">
+                                <img src="/images/project4.png" alt="Figma Design" />
+                            </div>
+                            <h2>Figma Website Design</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

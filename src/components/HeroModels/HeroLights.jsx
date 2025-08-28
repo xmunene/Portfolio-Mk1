@@ -6,11 +6,11 @@ export const HeroLights = () => {
     <>
       {/* Main ceiling strip lights - cool white */}
       <rectAreaLight 
-        position={[0, 5, 0]}
+        position={[0, 5, 5]}
         width={6}
         height={2}
         intensity={90}
-        color="#000f89"
+        color="#4B0082"
         rotation={[-Math.PI / 2, 0, 0]}
       />
       
@@ -18,17 +18,17 @@ export const HeroLights = () => {
       <spotLight 
         position={[0, 1, 3]}
         angle={0.8}
-        intensity={40}
+        intensity={90}
         penumbra={0.5}
-        color="#00aaff"
+        color="#800080"
         target-position={[0, 0, 0]}
       />
       
       {/* Warm light from screens */}
       <pointLight 
         position={[0, 1.5, 2]}
-        intensity={60}
-        color="#4488ff"
+        intensity={90}
+        color="#720e9e"
         distance={8}
         decay={2}
       />
