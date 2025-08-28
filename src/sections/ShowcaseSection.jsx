@@ -53,6 +53,10 @@ const ShowcaseSection = () => {
                         <p className="text-white-50 md:text-xl">
                             A web-app built with Next.JS, TailwindCSS, and Convex for a fast, user-friendly experience. 
                         </p>
+                        <div className="text-white-50 md:text-xl">
+                        <a href ="https://ticketsawa.vercel.app" target="_blank" rel="noopener noreferrer"> 
+                        </a>
+                        </div>
                         </div> 
                     </div>
 
