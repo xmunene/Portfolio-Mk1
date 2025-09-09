@@ -51,11 +51,12 @@ const ShowcaseSection = () => {
                         <div className="text-content">
                         <h2> Service-as-a-Service Events and Tickets Marketplace called TicketSawa</h2>
                         <p className="text-white-50 md:text-xl">
-                            A web-app built with Next.JS, TailwindCSS, and Convex for a fast, user-friendly experience. 
+                            A web-app built with Next.JS, TailwindCSS, and Convex for a fast, user-friendly experience.
                         </p>
-                        <div className="text-white-50 md:text-xl">
                         <a href ="https://ticketsawa.vercel.app" target="_blank" rel="noopener noreferrer"> 
+                                <span className="text-blue-50">View Project</span>
                         </a>
+                        <div className="text-white-50 md:text-xl">
                         </div>
                         </div> 
                     </div>
@@ -66,13 +67,18 @@ const ShowcaseSection = () => {
                             <div className="image-wrapper bg-[#e6dbff]">
                                 <img src="/images/project2.png" alt="3D Portfolio" />
                             </div>
-                            <h2>3D Portfolio with Three.JS</h2>
+                            <h2>3D Portfolio with Three.js</h2>
                         </div>
                         <div className="project" ref={project3Ref}>
                             <div className="image-wrapper bg-[#dbecff]">
-                                <img src="/images/project4.png" alt="Figma Design" />
+                                <img src="/images/project3.png" alt="Figma Design" />
                             </div>
                             <h2>Figma Website Design</h2>
+                            <p>
+                                <a href ="https://www.figma.com/proto/4S1Js8KBCD9gFIaYuXZmAc/CRITIQUE?node-id=68-56&t=30yL5Yk2ziHucBfL-0&scaling=contain&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="noopener noreferrer">
+                                    <span className="text-blue-50"> View Design</span>
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>

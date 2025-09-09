@@ -207,7 +207,7 @@ section {
   }
 
   .cta-button {
-    @apply relative px-4 py-4 rounded-lg bg-gray-600 flex justify-center items-center cursor-pointer overflow-hidden;
+    @apply relative px-4 py-4 rounded-lg bg-gray-400 flex justify-center items-center cursor-pointer overflow-hidden;
     @apply transition-all duration-500;
 
     &:hover {
@@ -237,7 +237,7 @@ section {
         @apply transition-all duration-500;
         
         .cta-button:hover & {
-            @apply text-gray-800 -translate-x-5;
+            @apply text-gray-600 -translate-x-5;
         }
     }
 
