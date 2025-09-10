@@ -65,8 +65,11 @@ const LearningTimeline = () => {
                             <div key={card.title} className="exp-card-wrapper">
                                 <div className="xl:w-2/6">
                                     <GlowCard card={card} index={index}>
-                                        <div>
+                                        <div className="flex items-center gap-5">
                                             <img src={card.imgPath} alt={card.title} />
+                                            <img src={card.imgPath2} alt={card.title} />
+                                            <img src={card.imgPath3} alt={card.title} />
+                                            <img src={card.imgPath4} alt={card.title} />
                                         </div>
                                    </GlowCard>
                                 </div>
@@ -86,7 +89,7 @@ const LearningTimeline = () => {
                                                     📅{card.date}
                                                 </p>
                                                 <p className="text-[#839cb5] italic">
-                                                    Responsibilities
+                                                Skills Gained
                                                 </p>
                                                 <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
                                                     {card.responsibilities.map((responsibility) => (
