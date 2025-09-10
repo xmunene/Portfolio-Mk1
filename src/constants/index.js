@@ -165,7 +165,7 @@ const navLinks = [
     {
       review:
         "State management solutions for complex React applications, providing predictable state containers for JavaScript applications.",
-      imgPath: "/images/Reactlogolong-.png",
+      imgPath: "/images/reactlogo.png",
       imgPath2: "/images/gitlogo.png",
       imgPath3: "/images/nodejslogo.png",
       imgPath4: "/images/typescriptlogo.png",
@@ -184,7 +184,7 @@ const navLinks = [
       imgPath: "/images/flutterlogo1.png",
       imgPath2: "/images/convexlogo.png",
       imgPath3: "/images/pythonlogo.png",
-      imgPath4: "/images/next.js-logo.png",
+      imgPath4: "/images/next.js-logo.jpg",
       logoPath: "/images/convexlogo.png",
       title: "Specialization Phase",
       date: "July 2025 - Present",
