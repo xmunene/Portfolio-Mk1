@@ -3,7 +3,7 @@ import { Environment, Float, useGLTF, OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import * as THREE from 'three'
 
-const TechIcons = ({ model }) => {
+const TechIcon = ({ model }) => {
     const scene = useGLTF(model.modelPath);
        
     return(
@@ -15,6 +15,7 @@ const TechIcons = ({ model }) => {
             <Float speed={5.5} rotationIntensity={0.5} floatIntensity={0.9}>
                 <group scale={model.scale} rotation={model.rotation}>
                     <primitive object={scene.scene} />
+
                 </group>
             </Float>
         </Canvas>
@@ -22,4 +23,4 @@ const TechIcons = ({ model }) => {
     )
 }
 
-export default TechIcons
+export default TechIcon
