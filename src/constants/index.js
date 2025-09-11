@@ -143,6 +143,30 @@ const navLinks = [
       scale: 0.05,
       rotation: [0, -Math.PI / 4, 0],
     },
+    {
+      name: "Mobile Developer",
+      modelPath: "/models/Flutter.glb",
+      scale: 30,
+      rotation: [0, 0, 0],
+    },
+    {
+      name: "Object Oriented Programmer",
+      modelPath: "/models/c++.glb",
+      scale: 0.08,
+      rotation: [0, 0, 0],
+    },
+    {
+      name: "Web Designer",
+      modelPath: "/models/figma.glb",
+      scale: 1.4,
+      rotation: [-4.5, 0, 0],
+    },
+    {
+      name: "CMS Developer",
+      modelPath: "/models/wordpress.glb",
+      scale: 0.15,
+      rotation: [1.5, 0, 0],
+    },
   ];
   
   const expCards = [
