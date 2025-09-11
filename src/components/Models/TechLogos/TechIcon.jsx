@@ -10,8 +10,7 @@ const TechIcon = ({ model }) => {
         <Canvas>
             <ambientLight intensity={0.3} />
             <directionalLight position={[5,5,5]} intensity={1} />
-            <Environment present="city" />
-
+            <Environment preset="city" />
             <Float speed={5.5} rotationIntensity={0.5} floatIntensity={0.9}>
                 <group scale={model.scale} rotation={model.rotation}>
                     <primitive object={scene.scene} />
