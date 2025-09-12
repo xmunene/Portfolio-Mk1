@@ -5,6 +5,8 @@ import NavBar from './components/NavBar.jsx';
 import FeatureCards from './sections/FeatureCards.jsx'
 import LearningTimeline from './sections/LearningTimeline.jsx'
 import TechStack from './sections/TechStack.jsx'
+import Contact from './sections/Contact.jsx'
+import Footer from './sections/Footer'
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
     <FeatureCards />
     <LearningTimeline />
     <TechStack />
+    <Contact />
+    <Footer />
    </>
   )
 }
