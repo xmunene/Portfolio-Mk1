@@ -1,19 +1,19 @@
 const navLinks = [
     {
-      name: "Work",
-      link: "#work",
+      name: 'About',
+      link: '#counter',
     },
     {
-      name: "Experience",
-      link: "#experience",
+      name: "Projects",
+      link: "#projects",
+    },
+    {
+      name: "Journey",
+      link: "#journey",
     },
     {
       name: "Skills",
       link: "#skills",
-    },
-    {
-      name: "Testimonials",
-      link: "#testimonials",
     },
   ];
   
@@ -248,12 +248,12 @@ const navLinks = [
     },
     {
       name: "x",
-      url: "https://www.x.com/",
+      url: "https://x.com/xmunene_",
       imgPath: "/images/x.png",
     },
     {
       name: "linkedin",
-      url: "https://www.linkedin.com/",
+      url: "https://www.linkedin.com/in/victor-munene-mulwa/",
       imgPath: "/images/linkedin.png",
     },
   ];
@@ -265,7 +265,6 @@ const navLinks = [
     counterItems,
     expCards,
     expLogos,
-    testimonials,
     socialImgs,
     techStackIcons,
     techStackImgs,
