@@ -5,6 +5,7 @@ import HeroExperience from '../components/HeroModels/HeroExperience.jsx'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import AboutMe from '../components/AnimatedCounter.jsx'
+
 const Hero = () => {
     useGSAP(() => {
         gsap.fromTo('.hero-text h1', 
@@ -22,6 +23,14 @@ const Hero = () => {
         )
     })
 
+    const scrollToAbout = () => {
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+          aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+    
+
   return (
     <section id="hero" className="relative overflow-hidden">
         <div className="absolute top-0 left-0 z-10">
@@ -36,8 +45,8 @@ const Hero = () => {
                             Shaping
                             <span className="slide">
                                 <span className="wrapper">
-                                    {words.map((word) => (
-                                        <span key={word.text} className="flex items-center md:gap-3 gap-1 pb-2">
+                                    {words.map((word, index) => (
+                                        <span key={index} className="flex items-center md:gap-3 gap-1 pb-2">
                                             <img
                                             src={word.imgPath}
                                             alt={word.text}
@@ -55,12 +64,12 @@ const Hero = () => {
                     <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
                         Hi, I'm Munene, a developer based in Nairobi, Kenya with a passion for code.
                     </p>
-                    <Button 
-                    className="md:w-80 md:h-16 w-60 h-12"
-                    id="about"
-                    text="Learn About Me"
+                    <div className="md:w-80 md:h-16 w-60 h-12" onClick={scrollToAbout}>
+                    <Button
+                        text="Learn About Me"
                     />
-                </div>
+                    </div>
+                                    </div>
             </header>
 
             {/*right=3D model */}

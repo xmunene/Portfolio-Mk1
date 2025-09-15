@@ -27,14 +27,30 @@ const navLinks = [
     { text: "Designs", imgPath: "/images/designs.svg" },
     { text: "Code", imgPath: "/images/code.svg" },
   ];
-  
-  const counterItems = [
-    { value: 2, suffix: "+", label: "Years of Experience" },
-    { value: 3, suffix: "+", label: "Satisfied Clients" },
-    { value: 10, suffix: "+", label: "Completed Projects" },
-    { value: 95, suffix: "%", label: "Client Retention Rate" },
+
+  const aboutItems = [
+    {
+      icon: "🎯",
+      title: "Mission",
+      description: "Transforming innovative ideas into digital solutions that solve real-world problems and create meaningful impact."
+    },
+    {
+      icon: "🚀",
+      title: "Passion",
+      description: "Full-stack development with a focus on modern web technologies, 3D experiences, and user-centered design."
+    },
+    {
+      icon: "🌍",
+      title: "Location",
+      description: "Based in Nairobi, Kenya, serving clients globally with a deep understanding of both local and international markets."
+    },
+    {
+      icon: "💡",
+      title: "Approach",
+      description: "Collaborative, detail-oriented, and committed to delivering high-quality solutions that exceed expectations."
+    }
   ];
-  
+    
   const logoIconsList = [
     {
       imgPath: "/images/logos/company-logo-1.png",
@@ -262,10 +278,10 @@ const navLinks = [
     words,
     abilities,
     logoIconsList,
-    counterItems,
     expCards,
     expLogos,
     socialImgs,
+    aboutItems,
     techStackIcons,
     techStackImgs,
     navLinks,
