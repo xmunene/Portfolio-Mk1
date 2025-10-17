@@ -9,7 +9,7 @@ export const HeroLights = () => {
         position={[0, 5, 5]}
         width={6}
         height={2}
-        intensity={90}
+        intensity={95}
         color="#4B0082"
         rotation={[-Math.PI / 2, 0, 0]}
       />
@@ -18,7 +18,7 @@ export const HeroLights = () => {
       <spotLight 
         position={[0, 1, 3]}
         angle={0.8}
-        intensity={90}
+        intensity={95}
         penumbra={0.5}
         color="#800080"
         target-position={[0, 0, 0]}
@@ -27,7 +27,7 @@ export const HeroLights = () => {
       {/* Warm light from screens */}
       <pointLight 
         position={[0, 1.5, 2]}
-        intensity={90}
+        intensity={95}
         color="#720e9e"
         distance={8}
         decay={2}
@@ -37,7 +37,7 @@ export const HeroLights = () => {
       <spotLight 
         position={[-3, 3, 5]}
         angle={1.2}
-        intensity={50}
+        intensity={90}
         penumbra={1}
         color="#2244aa"
       />
@@ -46,7 +46,7 @@ export const HeroLights = () => {
         position={[3, 3, 0]}
         angle={1.2}
         intensity={3}
-        penumbra={1}
+        penumbra={50}
         color="#2244aa"
       />
       
@@ -56,7 +56,7 @@ export const HeroLights = () => {
       {/* Very subtle directional light for depth */}
       <directionalLight 
         position={[2, 4, 4]} 
-        intensity={0.8} 
+        intensity={2.3} 
         color="#ffffff"
       />
     </>

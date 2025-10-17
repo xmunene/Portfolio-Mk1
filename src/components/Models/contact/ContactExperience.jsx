@@ -1,19 +1,20 @@
 import React from 'react'
-import { OrbitControls } from '@react-three/drei'
-import { Canvas } from '@react-three/fiber';
-import * as THREE from 'three'
-import { Dance } from './Models/Dance_male.jsx'
+import '/images/Contact_image.png'
 
 const ContactExperience = () => {
   return (
-    <Canvas>
-      <group scale={0.03} position={[0, -1.5, -2]}>
-         
-      <Dance />
-      
-      </group>
-    </Canvas>
-  )
+    <div className="flex justify-center items-center w-full h-full">
+      <video 
+        className="w-full h-full object-cover"
+        src="images/screen.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        Your browser does not support the video tag.
+      </video>    </div>
+    )
 }
 
 export default ContactExperience

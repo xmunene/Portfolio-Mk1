@@ -166,7 +166,7 @@ const navLinks = [
       rotation: [0, 0, 0],
     },
     {
-      name: "Object Oriented Programmer",
+      name: "OO-Programmer",
       modelPath: "/models/c++.glb",
       scale: 0.08,
       rotation: [0, 0, 0],
@@ -179,7 +179,7 @@ const navLinks = [
     },
     {
       name: "CMS Developer",
-      modelPath: "/models/wordpress.glb",
+      modelPath: "/models/wordpress-v1.glb",
       scale: 0.15,
       rotation: [1.5, 0, 0],
     },
