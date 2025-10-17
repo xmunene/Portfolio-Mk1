@@ -98,8 +98,8 @@ section {
     @apply bg-black-200 py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap;
   }
 
-  .hero-3d-layout {
-    @apply xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 xl:-right-20 right-0;
+   .hero-3d-layout {
+    @apply xl:w-[70%] xl:h-[100%] w-full h-[50vh] min-h-[40vh] absolute xl:-top-20 top-75 xl:-right-20 right-0;
   }
 
   .navbar {
