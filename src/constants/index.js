@@ -183,6 +183,12 @@ const navLinks = [
       scale: 0.15,
       rotation: [1.5, 0, 0],
     },
+    {
+      name: "Backend Developer",
+      modelPath: "/models/docker_whale-v1.glb",
+      scale: 1.3,
+      rotation: [0, 0, 0],
+    },
   ];
   
   const expCards = [
