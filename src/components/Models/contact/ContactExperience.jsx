@@ -1,5 +1,4 @@
 import React from 'react'
-import '/images/Contact_image.png'
 
 const ContactExperience = () => {
   return (

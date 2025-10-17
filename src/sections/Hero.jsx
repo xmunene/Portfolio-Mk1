@@ -69,7 +69,7 @@ const Hero = () => {
                         text="Learn About Me"
                     />
                     </div>
-                                    </div>
+                </div>
             </header>
 
             {/*right=3D model */}

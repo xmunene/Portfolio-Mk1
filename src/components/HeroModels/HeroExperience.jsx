@@ -9,7 +9,8 @@ import { CameraAnimation } from './CameraAnimation.jsx'
 
 const HeroExperience = () => {
     const isTablet = useMediaQuery({ query: '(max-width: 1024px)' });
-    const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+    const isMobile = useMediaQuery({ query: '(max-width: 768px )' });
+    
 
   return (
     <Canvas camera={{ position: [0.15, -1.5, 15], fov: 45}}>
@@ -28,8 +29,8 @@ const HeroExperience = () => {
         {/*<Particles count={100} />*/}
 
         <group
-        scale={isMobile? 2.3 : 2.5}
-        position={[1.1, -1.9, 0]}
+        scale={isMobile? 2.0 : 2.5}
+        position={[1.1, isMobile ? -3.4: -2.0, 0]}
         rotation={[0, Math.PI / 111, 0]}
         >
         <Room />
