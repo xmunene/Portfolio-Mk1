@@ -56,7 +56,7 @@ const ShowcaseSection = () => {
                         <img src="/images/project1.png" alt="ticketsawa" />
                         </div>
                         <div className="text-content">
-                        <h2> Service-as-a-Service Events and Tickets Marketplace called TicketSawa</h2>
+                        <h2> Software-as-a-Service Events and Tickets Marketplace called TicketSawa</h2>
                         <p className="text-white-50 md:text-xl">
                             A web-app built with Next.JS, TailwindCSS, and Convex for a fast, user-friendly experience.
                         </p>

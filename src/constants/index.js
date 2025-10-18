@@ -184,7 +184,7 @@ const navLinks = [
       rotation: [1.5, 0, 0],
     },
     {
-      name: "Backend Developer",
+      name: "Database Manager",
       modelPath: "/models/docker_whale-v1.glb",
       scale: 1.3,
       rotation: [0, 0, 0],
