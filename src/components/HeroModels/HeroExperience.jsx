@@ -2,7 +2,7 @@ import React from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import { useMediaQuery } from 'react-responsive'
-import { Gamingroom } from './Gamingroom.jsx' 
+import { Room } from './Room.jsx' 
 import { HeroLights } from './HeroLights.jsx'
 import Particles from './Particles.jsx'
 import { CameraAnimation } from './CameraAnimation.jsx'
@@ -13,7 +13,7 @@ const HeroExperience = () => {
     
 
   return (
-    <Canvas camera={{ position: [0, 0, 10], fov: 45}}>
+    <Canvas camera={{ position: [0.15, -1.5, 15], fov: 45}}>
         <CameraAnimation />
         <OrbitControls 
         enablePan={false}
@@ -22,18 +22,18 @@ const HeroExperience = () => {
         minDistance={5}
         minPolarAngle={Math.PI / 4}
         maxPolarAngle={Math.PI / 2}
-        target={[0, 1, 10]}
+        target={[-0.15, -1.5, -1]}
         />
 
         <HeroLights />
         {/*<Particles count={100} />*/}
 
         <group
-        scale={isMobile? 3.0 : 1.5}
-        position={[0, isMobile ? -1.8: -2.0, 0]}
+        scale={isMobile? 3.0 : 2.5}
+        position={[1, isMobile ? -1.8: -2.0, 0]}
         rotation={[0, Math.PI / 111, 0]}
         >
-        <Gamingroom />
+        <Room />
         </group>
     </Canvas>
   )
